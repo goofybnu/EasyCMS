@@ -1,0 +1,7 @@
+<IfModule mod_rewrite.c>
+	RewriteEngine On
+	RewriteBase /
+	RewriteRule ^(css|js|images|libs)($|/) - [L]
+	RewriteRule ^(.*)$ index.php [QSA,L]
+</IfModule>
+
